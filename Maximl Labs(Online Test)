@@ -1,0 +1,22 @@
+def length_substring(s):
+
+        start = 0
+        end = 0
+
+        store = {}
+
+        longest = 0
+
+        while end < len(s) and start <= end:
+
+            if s[end] in store:
+                store.pop(s[start])
+
+            else:
+                store[s[end]] = True
+                end += 1  
+                longest = max(longest, len(store))
+
+        return longest
+        
+        length_substring(input())
