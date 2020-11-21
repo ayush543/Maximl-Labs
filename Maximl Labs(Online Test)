@@ -19,4 +19,4 @@ def length_substring(s):
 
         return longest
         
-        length_substring(input())
+length_substring(input())
